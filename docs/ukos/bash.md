@@ -28,7 +28,3 @@
 10. clear
 - clear
 - Czyszczenie widoku terminala bez usuwania historii poleceń.
-11. ni ma
-- elo elo 320
-- joł
-

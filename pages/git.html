@@ -9,16 +9,26 @@
 <body>
   <header>
     <nav>
-      <a href="../index.html">&larr; Powrót do strony głównej</a>
+      <a href="../index.html">Strona główna</a> | 
+      <a href="bash.html">Bash</a> | 
+      <a href="dotnet_cli.html">.NET</a>
     </nav>
     <h1>Podstawy systemu Git</h1>
   </header>
 
   <main>
     <section>
-      <h2>Przydatne polecenia</h2>
-      <p>Oto najczęściej używane komendy w codziennej pracy z repozytorium:</p>
+      <h2>Wprowadzenie</h2>
+      <p>Git to rozproszony system kontroli wersji, który pozwala śledzić zmiany w kodzie źródłowym oraz współpracować w zespole.</p>
       
+      <p><strong>Linki źródłowe:</strong></p>
+      <ul>
+        <li><a href="https://git-scm.com/docs" target="_blank" rel="noreferrer">Oficjalna dokumentacja Git ↗</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń Git</h2>
       <table>
         <thead>
           <tr>
@@ -28,16 +38,44 @@
         </thead>
         <tbody>
           <tr>
-            <td><code>git status</code></td>
-            <td>Pokazuje stan drzewa roboczego i śledzone pliki.</td>
+            <td><code>git clone [url]</code></td>
+            <td>Klonuje zdalne repozytorium na lokalny komputer.</td>
           </tr>
           <tr>
-            <td><code>git add .</code></td>
+            <td><code>git status</code></td>
+            <td>Pokazuje stan drzewa roboczego i pliki oczekujące na zatwierdzenie.</td>
+          </tr>
+          <tr>
+            <td><code>git branch</code></td>
+            <td>Wyświetla listę gałęzi w repozytorium lub tworzy nową.</td>
+          </tr>
+          <tr>
+            <td><code>git switch [nazwa]</code></td>
+            <td>Przełącza bieżącą gałąź roboczą na wskazaną.</td>
+          </tr>
+          <tr>
+            <td><code>git add [plik]</code></td>
             <td>Dodaje zmiany do obszaru przygotowawczego (staging area).</td>
           </tr>
           <tr>
             <td><code>git commit -m "komentarz"</code></td>
-            <td>Tworzy nowy commit z zatwierdzonymi zmianami.</td>
+            <td>Tworzy commit zatwierdzający zmiany w historii.</td>
+          </tr>
+          <tr>
+            <td><code>git fetch</code></td>
+            <td>Pobiera metadane i zmiany ze zdalnego repozytorium bez ich scalania.</td>
+          </tr>
+          <tr>
+            <td><code>git pull</code></td>
+            <td>Pobiera i scala zmiany ze zdalnego repozytorium do bieżącej gałęzi.</td>
+          </tr>
+          <tr>
+            <td><code>git push origin [branch]</code></td>
+            <td>Wysyła lokalne commity na zdalny serwer.</td>
+          </tr>
+          <tr>
+            <td><code>git log --oneline</code></td>
+            <td>Wyświetla skróconą historię commitów w repozytorium.</td>
           </tr>
         </tbody>
       </table>

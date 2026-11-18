@@ -3,22 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ściąga z .NET CLI - Student IT Knowledge Base</title>
+  <title>Ściąga z .NET - Student IT Knowledge Base</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="../index.html">&larr; Powrót do strony głównej</a>
+      <a href="../index.html">Strona główna</a> | 
+      <a href="git.html">Git</a> | 
+      <a href="bash.html">Bash</a>
     </nav>
-    <h1>Interfejs wiersza poleceń .NET (.NET CLI)</h1>
+    <h1>Interfejs wiersza poleceń .NET </h1>
   </header>
 
   <main>
     <section>
-      <h2>Zarządzanie projektami C#</h2>
-      <p>Podstawowe komendy do tworzenia, budowania i uruchamiania aplikacji konsolowych:</p>
+      <h2>Wprowadzenie</h2>
+      <p>Narzędzie wiersza poleceń .NET służy do tworzenia, budowania, uruchamiania i zarządzania aplikacjami platformy .NET.</p>
       
+      <p><strong>Linki źródłowe:</strong></p>
+      <ul>
+        <li><a href="https://learn.microsoft.com/pl-pl/dotnet/core/tools/" target="_blank" rel="noreferrer">Oficjalna dokumentacja .NET ↗</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń .NET </h2>
       <table>
         <thead>
           <tr>
@@ -28,16 +38,36 @@
         </thead>
         <tbody>
           <tr>
+            <td><code>dotnet --version</code></td>
+            <td>Wyświetla zainstalowaną wersję zestawu .NET SDK.</td>
+          </tr>
+          <tr>
+            <td><code>dotnet --list-sdks</code></td>
+            <td>Pokazuje listę wszystkich zainstalowanych na komputerze wersji SDK.</td>
+          </tr>
+          <tr>
+            <td><code>dotnet new list</code></td>
+            <td>Wyświetla dostępne szablony projektów, które można utworzyć.</td>
+          </tr>
+          <tr>
             <td><code>dotnet new console</code></td>
-            <td>Tworzy nowy projekt aplikacji konsolowej w bieżącym katalogu.</td>
+            <td>Tworzy nowy projekt aplikacji konsolowej.</td>
+          </tr>
+          <tr>
+            <td><code>dotnet restore</code></td>
+            <td>Przywraca zależności i pakiety zdefiniowane w projekcie.</td>
           </tr>
           <tr>
             <td><code>dotnet build</code></td>
-            <td>Kompiluje projekt i sprawdza występowanie błędów.</td>
+            <td>Kompiluje kod źródłowy aplikacji do postaci pliku wykonywalnego.</td>
           </tr>
           <tr>
             <td><code>dotnet run</code></td>
             <td>Kompiluje i uruchamia aplikację w konsoli.</td>
+          </tr>
+          <tr>
+            <td><code>dotnet clean</code></td>
+            <td>Czyści katalog wyjściowy projektu (usuwa pliki po kompilacji).</td>
           </tr>
         </tbody>
       </table>
@@ -45,7 +75,7 @@
   </main>
 
   <footer>
-    <p>Student IT Knowledge Base &bull; Podstrona .NET CLI</p>
+    <p>Student IT Knowledge Base &bull; Podstrona .NET</p>
   </footer>
 </body>
 </html>

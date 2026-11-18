@@ -3,41 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ściąga z Bash - Student IT Knowledge Base</title>
+  <title>Ściąga z Basha - Student IT Knowledge Base</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="../index.html">&larr; Powrót do strony głównej</a>
+      <a href="../index.html">Strona główna</a> | 
+      <a href="git.html">Git</a> | 
+      <a href="dotnet_cli.html">.NET</a>
     </nav>
-    <h1>Podstawy powłoki Bash</h1>
+    <h1>Przekształć ściągę UKOS</h1>
   </header>
 
   <main>
     <section>
-      <h2>Przydatne polecenia systemowe</h2>
-      <p class="info-note">Pamiętaj, że polecenie <code>rm</code> usuwa pliki bez użycia kosza. Przed wykonaniem sprawdź bieżący katalog.</p>
+      <h2>Podstawy powłoki Bash</h2>
       
+      <p class="info-note">
+        <strong>Zasady bezpiecznej pracy w terminalu:</strong> Zawsze sprawdzaj bieżący katalog przed użyciem poleceń modyfikujących pliki (np. <code>rm</code>). Pamiętaj, że operacje w terminalu często są nieodwracalne.
+      </p>
+
+      <p><strong>Linki źródłowe:</strong></p>
+      <ul>
+        <li><a href="https://www.gnu.org/software/bash/manual/" target="_blank" rel="noreferrer">Oficjalny GNU Bash Manual ↗</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń Bash</h2>
       <table>
+        <caption>Zestawienie podstawowych poleceń powłoki Bash</caption>
         <thead>
           <tr>
             <th>Polecenie</th>
-            <th>Opis działania</th>
+            <th>Przykład</th>
+            <th>Opis</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>pwd</code></td>
-            <td>Wyświetla ścieżkę do aktualnego katalogu roboczego.</td>
+            <td><code>pwd</code></td>
+            <td>Wyświetla ścieżkę do bieżącego katalogu roboczego.</td>
           </tr>
           <tr>
+            <td><code>ls</code></td>
             <td><code>ls -la</code></td>
-            <td>Listuje wszystkie pliki (w tym ukryte) w formacie szczegółowym.</td>
+            <td>Wyświetla zawartość katalogu.</td>
           </tr>
           <tr>
-            <td><code>cd nazwa_katalogu</code></td>
+            <td><code>cd</code></td>
+            <td><code>cd katalog</code></td>
             <td>Zmienia bieżący katalog na wskazany.</td>
+          </tr>
+          <tr>
+            <td><code>mkdir</code></td>
+            <td><code>mkdir nowy_katalog</code></td>
+            <td>Tworzy nowy katalog.</td>
+          </tr>
+          <tr>
+            <td><code>touch</code></td>
+            <td><code>touch plik.txt</code></td>
+            <td>Tworzy pusty plik lub aktualizuje datę modyfikacji.</td>
+          </tr>
+          <tr>
+            <td><code>cp</code></td>
+            <td><code>cp plik.txt kopia.txt</code></td>
+            <td>Kopiuje pliki lub katalogi.</td>
+          </tr>
+          <tr>
+            <td><code>mv</code></td>
+            <td><code>mv stary.txt nowy.txt</code></td>
+            <td>Przenosi lub zmienia nazwę pliku/katalogu.</td>
+          </tr>
+          <tr>
+            <td><code>rm</code></td>
+            <td><code>rm plik.txt</code></td>
+            <td>Usuwa pliki lub katalogi.</td>
+          </tr>
+          <tr>
+            <td><code>cat</code></td>
+            <td><code>cat plik.txt</code></td>
+            <td>Wyświetla zawartość pliku tekstowego na ekranie.</td>
+          </tr>
+          <tr>
+            <td><code>clear</code></td>
+            <td><code>clear</code></td>
+            <td>Czyści ekran terminala.</td>
           </tr>
         </tbody>
       </table>
@@ -45,7 +98,7 @@
   </main>
 
   <footer>
-    <p>Student IT Knowledge Base &bull; Podstrona Bash</p>
+    <p>Student IT Knowledge Base &bull; Podstrona Bash (UKOS)</p>
   </footer>
 </body>
 </html>
